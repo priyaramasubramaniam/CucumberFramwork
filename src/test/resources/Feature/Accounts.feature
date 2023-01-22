@@ -12,10 +12,10 @@ Feature: Account page feature
   Scenario: Accounts section count
     Given user is on Accounts page
     Then user gets accounts section
+      |ADD MY FIRST ADDRESS|
       |ORDER HISTORY AND DETAILS|
       |MY CREDIT SLIPS|
       |MY ADDRESSES|
       |MY PERSONAL INFORMATION|
-      |MY WISHLISTS|
       |Home|
-    And accounts section count should be 6
+    And accounts section count should be 5

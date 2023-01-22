@@ -15,7 +15,7 @@ public class ConfigReader {
    {
       prop = new Properties();
       try {
-         FileInputStream fis = new FileInputStream("/home/waioz/eclipse-workspace/CucumberFramwork/src/test/resources/Configs/config.properties");
+         FileInputStream fis = new FileInputStream("src/test/resources/Configs/config.properties");
          prop.load(fis);
       } catch (FileNotFoundException e) {
          throw new RuntimeException(e);

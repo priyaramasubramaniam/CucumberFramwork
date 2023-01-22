@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-      features = {"/home/waioz/eclipse-workspace/CucumberFramwork/src/test/resources/Feature"},
+      features = {"src/test/resources/Feature/Accounts.feature"},
       glue = {"AppHooks","stepDefinitions"},
       plugin = {
-            "pretty",
+              "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
       }
 )
 public class myTestRunner {
